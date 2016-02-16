@@ -470,7 +470,7 @@ function run(msg, matches)
 		return  --Do nothing
 	end
 
-    if matches[1] == 'ساخت گروه مادر' and matches[2] then
+    if matches[1] == 'گروه مادر' and matches[2] then
         group_name = matches[2]
         group_type = 'realm'
         return create_realm(msg)
@@ -659,7 +659,7 @@ end
 return {
   patterns = {
     "^(ساخت گروه) (.*)$",
-    "^(ساخت گروه مادر) (.*)$",
+    "^(گروه مادر) (.*)$",
     "^[!/](setabout) (%d+) (.*)$",
     "^[!/](setrules) (%d+) (.*)$",
     "^[!/](setname) (.*)$",
