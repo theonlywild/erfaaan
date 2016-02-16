@@ -30,7 +30,7 @@ local function check_member_autorealm(cb_extra, success, result)
       end
       data[tostring(realms)][tostring(msg.to.id)] = msg.to.id
       save_data(_config.moderation.data, data)
-      return send_large_msg(receiver, 'به ریلیم جدید ما خوش آمدید!')
+      return send_large_msg(receiver, 'به ریلم جدید ما خوش آمدید!')
     end
   end
 end
@@ -168,7 +168,7 @@ local function check_member_realmrem(cb_extra, success, result)
       end
       data[tostring(realms)][tostring(msg.to.id)] = nil
       save_data(_config.moderation.data, data)
-      return send_large_msg(receiver, 'ریلیم حذف شد')
+      return send_large_msg(receiver, 'ریلم حذف شد')
     end
   end
 end
@@ -555,7 +555,7 @@ local function realmadd(msg)
   end
   local data = load_data(_config.moderation.data)
   if is_realm(msg) then
-    return 'ریلیم از قبل اد شده'
+    return 'ریلم از قبل اد شده'
   end
     receiver = get_receiver(msg)
     chat_info(receiver, check_member_realm_add,{receiver=receiver, data=data, msg = msg}) 
@@ -581,7 +581,7 @@ function realmrem(msg)
   end
   local data = load_data(_config.moderation.data)
   if not is_realm(msg) then
-    return 'ریلیم اد نشده'
+    return 'ریلم اد نشده'
   end
     receiver = get_receiver(msg)
     chat_info(receiver, check_member_realmrem,{receiver=receiver, data=data, msg = msg})
@@ -824,12 +824,12 @@ local function run(msg, matches)
   end
   if matches[1] == 'اضافه' and not matches[2] then
     if is_realm(msg) then
-       return '*خطا  : از قبل ریلیم است'
+       return '*خطا  : از قبل ریلم است'
     end
     print("group "..msg.to.print_name.."("..msg.to.id..") added")
     return modadd(msg)
   end
-   if matches[1] == 'اضافه' and matches[2] == 'ریلیم' then
+   if matches[1] == 'اضافه' and matches[2] == 'ریلم' then
     if is_group(msg) then
        return '*خطا   : از قبل گروه است'
     end
@@ -840,7 +840,7 @@ local function run(msg, matches)
     print("group "..msg.to.print_name.."("..msg.to.id..") removed")
     return modrem(msg)
   end
-  if matches[1] == 'حذف' and matches[2] == 'ریلیم' then
+  if matches[1] == 'حذف' and matches[2] == 'ریلم' then
     print("group "..msg.to.print_name.."("..msg.to.id..") removed as a realm")
     return realmrem(msg)
   end
@@ -1345,9 +1345,9 @@ end
 return {
   patterns = {
   "^(اضافه)$",
-  "^(اضافه) (ریلیم)$",
+  "^(اضافه) (ریلم)$",
   "^(حذف)$",
-  "^(حذف) (ریلیم)$",
+  "^(حذف) (ریلم)$",
   "^(قوانین)$",
   "^(توضیحات)$",
   "^(تنظیم نام) (.*)$",
