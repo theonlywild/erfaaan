@@ -1186,7 +1186,7 @@ local function run(msg, matches)
         return "اول با لینک جدید یک لینک جدید بسازید"
       end
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]")
-      return "لینک گروه :\ntelegram.me/teleadvan\n"..group_link
+      return "لینک گروه :\nقدرت برگرفته از ادوان\n"..group_link
     end
 	if matches[1] == 'لینک خصوصی' then
       if not is_momod(msg) then
@@ -1197,7 +1197,7 @@ local function run(msg, matches)
         return "اول با لینک جدید یک لینک بسازید"
       end
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]")
-     send_large_msg('user#id'..msg.from.id, "لینک گروه :\ntelegram.me/teleadvan\n"..group_link)
+     send_large_msg('user#id'..msg.from.id, "لینک گروه :\nقدرت برگرفته از ادوان\n"..group_link)
     end
     if matches[1] == 'دارنده' and matches[2] then
       if not is_owner(msg) then
@@ -1264,7 +1264,7 @@ local function run(msg, matches)
         if next(data[tostring(msg.to.id)]['moderators']) == nil then --fix way
           return 'مدیری در گروه نیست'
         end
-        local message = '\nلیست مدیران گروه: \ntelegram.me/teleadvan \n ' .. string.gsub(msg.to.print_name, '_', ' ') .. ':\n'
+        local message = '\nلیست مدیران گروه: \nقدرت برگرفته از ادوان\n ' .. string.gsub(msg.to.print_name, '_', ' ') .. ':\n'
         for k,v in pairs(data[tostring(msg.to.id)]['moderators']) do
           data[tostring(msg.to.id)]['moderators'][tostring(k)] = nil
           save_data(_config.moderation.data, data)
