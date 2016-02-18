@@ -216,7 +216,7 @@ local function show_group_settingsmod(msg, data, target)
     	leave_ban = data[tostring(msg.to.id)]['settings']['leave_ban']
    	end
   local settings = data[tostring(target)]['settings']
-  local text = "تنظیمات گروه:\nممنوعیت فحاشی : "..settings.antifosh.."\nقفل تگ : "..settings.antitag.."\nقفل لینک : "..settings.antilink.."\nقفل نام گروه : "..settings.lock_name.."\nقفل عکس گروه : "..settings.lock_photo.."\nقفل اعضا گروه : "..settings.lock_member.."\nقفل خروج : "..leave_ban.."\nحساسیت اسپم: "..NUM_MSG_MAX.."\nقفل ربات ها : "..bots_protection--"\nPublic: "..public
+  local text = "تنظیمات گروه:\n\n>قفل نام گروه : "..settings.lock_name.."\n>قفل عکس گروه : "..settings.lock_photo.."\n>قفل اعضا : "..settings.lock_member.."\n>ممنوعیت ارسال لینک : "..lock_link.."\n>حساسیت اسپم : "..NUM_MSG_MAX.."\n>قفل ربات ها : "..bots_protection.."\n>قفل تگ : "..tag.."\n>قفل اینگلیسی :"..lock_english.."\n>قفل فحش : "..lock_badw.."\n>Sbss Open Source Version\n"
   return text
 end
 
@@ -236,7 +236,7 @@ local function get_description(msg, data)
   end
   local about = data[tostring(msg.to.id)][data_cat]
   local about = string.gsub(msg.to.print_name, "_", " ")..':\n\n'..about
-  return 'درباره '..about
+  return 'درباره'..about
 end
 local function lock_group_arabic(msg, data, target)
   if not is_momod(msg) then
