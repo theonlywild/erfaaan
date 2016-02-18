@@ -963,7 +963,7 @@ local function run(msg, matches)
         return nil
       end
     end
-    if matches[1] == 'setname' and is_momod(msg) then
+    if matches[1] == 'تنظیم نام' and is_momod(msg) then
       local new_name = string.gsub(matches[2], '_', ' ')
       data[tostring(msg.to.id)]['settings']['set_name'] = new_name
       save_data(_config.moderation.data, data)
@@ -976,7 +976,7 @@ local function run(msg, matches)
     if matches[1] == 'تنظیم عکس' and is_momod(msg) then
       data[tostring(msg.to.id)]['settings']['set_photo'] = 'waiting'
       save_data(_config.moderation.data, data)
-      return 'Please send me new group photo now'
+      return 'لطفا عکس جدید گروه را ارسال کنید'
     end
     if matches[1] == 'ترفیع' and not matches[2] then
       if not is_owner(msg) then
@@ -1020,7 +1020,7 @@ local function run(msg, matches)
         return "فقط توسط صاحب گروه"
       end
       if string.gsub(matches[2], "@", "") == msg.from.username and not is_owner(msg) then
-        return "شما نمیتوانید خود را تنزل دهید"
+        return "شما نمیتوانید مقام خود را حذف کنید"
       end
 	local member = matches[2]
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] demoted @".. member)
