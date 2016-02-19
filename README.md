@@ -8,5 +8,7 @@
 
 #Developers: 
 [@janlou](telegram.me/janlou)
+,
 [@amiraliiiiiiiii81](telegram.me/amiraliiiiiiiii81)
+,
 [@amirhossein_0079](telegram.me/amirhossein_0079)
