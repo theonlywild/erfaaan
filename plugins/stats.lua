@@ -141,8 +141,8 @@ return {
     "^(آمار)$",
     "^(لیست آمار)$",
     "^(امار) (گروه) (%d+)",
-    "^(امار) (sbss)",-- Put everything you like :)
-		"^[!/@#$%^&*()_+]([Ss]bss)"-- Put everything you like :)
+    "^(امار) (rooh)",-- Put everything you like :)
+		"^[!/@#$%^&*()_+]([Rr]ooh)"-- Put everything you like :)
     }, 
   run = run
 }
