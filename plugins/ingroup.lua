@@ -63,7 +63,7 @@ local function check_member_realm_add(cb_extra, success, result)
       end
       data[tostring(realms)][tostring(msg.to.id)] = msg.to.id
       save_data(_config.moderation.data, data)
-      return send_large_msg(receiver, 'Realm has been added!')
+      return send_large_msg(receiver, 'ریلم اضافه شد')
     end
   end
 end
