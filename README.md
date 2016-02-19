@@ -1,9 +1,7 @@
-#SBSS Bot
+#AdvanTM
 
-#تمامی پلاگین ها فارسی میباشند
+#رباتی با دستورات کاملا فارسی
 
-#برای فهمیدن دستورات قسمت پترنز در پلاگین ها را چک کنید
+#شما میتوانید دستورات را در پلاگین ها تغییر دهید
 
-#Wiki Soon...
-
-#Powered By [@SBSS_Team](telegram.me/Sbss_Team)
+#Bot: [@TeleAdvan](telegram.me/teleadvan)
