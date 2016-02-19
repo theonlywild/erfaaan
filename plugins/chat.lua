@@ -1,72 +1,51 @@
 local function run(msg)
-if msg.text == "hi" then
-	return "Hello bb"
+if msg.text == "سلام" then
+	return "سلام"
 end
-if msg.text == "Hi" then
-	return "Hello honey"
+if msg.text == "خوبی" then
+	return "بخوبیت تو خوبی؟"
 end
-if msg.text == "Hello" then
-	return "Hi bb"
+if msg.text == "مرسی" then
+	return "😊"
 end
-if msg.text == "hello" then
-	return "Hi honey"
+if msg.text == "روح سوار" then
+	return "بله"
 end
-if msg.text == "Salam" then
-	return "Salam aleykom"
+if msg.text == "عرفان" then
+	return "کارش داری بهم بگو بهش میگممم"
 end
-if msg.text == "salam" then
-	return "va aleykol asalam"
+if msg.text == "بای روح سوار" then
+	return "بای عسیسم"
 end
-if msg.text == "zac" then
-	return "Nagaeedim"
+if msg.text == "سلام روح سوار" then
+	return "سلام به روی ماهت"
 end
-if msg.text == "Zac" then
-	return "Nagaeedim"
+if msg.text == "slm" then
+	return "درست سلام بده تا جوابتو بدممم"
+
 end
-if msg.text == "Sbss" then
-	return "Is the best"
+if msg.text == "خوابم میاد" then
+	return "برو بکپ"
+	
 end
-if msg.text == "Sbss" then
-	return "Is the best"
+if msg.text == "من رفتم بای" then
+	return "برو گمشووو"
+	
 end
-if msg.text == "SBSS" then
-	return "Jnm?"
+if msg.text == "کسی نیست؟" then
+	return "روح همیشه هست"
+	
 end
-if msg.text == "bot" then
-	return "hum?"
+if msg.text == "گروه میخوام" then
+	return "صبر کن تا عرفان  و تیمش بیاد میسازه واست"
+	
 end
-if msg.text == "Bot" then
-	return "Huuuum?"
-end
-if msg.text == "?" then
-	return "خسته نمیشی اینقد سوال میپرسی؟"
-end
-if msg.text == "Bye" then
-	return "Babay"
+if msg.text == "اصل بده" then
+	return "روح سوار از  مازندران_ساری"
+	
 end
 if msg.text == "bye" then
 	return "Bye Bye"
-end
-if msg.text == "سلام" then
-	return "علیـک"
-end
-if msg.text == "slm" then
-	return "سلام"
-end
-if msg.text == "Slm" then
-	return "سلام"
-end
-if msg.text == "بای" then
-	return "اودافظ"
-end
-if msg.text == "خدافظ" then
-	return "Bye Bye"
-end
-if msg.text == "Mr Ahs" then
-	return "چیکار داری بابامو؟"
-end
-if msg.text == "@Mr_Ah_s" then
-	return "چیکار داری بابامو؟"
 end
 end
 
@@ -74,22 +53,21 @@ return {
 	description = "Chat With Robot Server", 
 	usage = "chat with robot",
 	patterns = {
-		"^[Hh]i$",
-		"^[Hh]ello$",
-		"^[Zz]ac$",
 		"^سلام$",
-		"^[Bb]ot$",
-		"^[Uu]mbrella$",
-		"^[Bb]ye$",
-		"^?$",
-		"^[Ss]alam$",
-		"^@Mr_Ah_S$",
-		"^Mr Ahs$",
-		"^خدافظ$",
-		"^بای$",
-		"^[Ss]lm$",
-		"^SBSS$",
-		"^[Ss]bss$",
+		"^من رفتم$",
+		"^روح سوار$",
+		"^اصل بده$",
+		"^گروه میخوام$",
+		"^کسی نیست؟$",
+		"^خوبی$",
+		"^عرفان$",
+		"^مرسی$",
+		"^bye$",
+		"^بای روح سوار$",
+		"^سلام روح سوار$",
+		"^slm",
+		"^خوابم میاد",
+		"^من رفتم بای",
 		}, 
 	run = run,
     --privileged = true,
