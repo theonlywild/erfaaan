@@ -239,29 +239,29 @@ function create_config( )
     "time",
     "welcome"
     },
-    sudo_users = {111984481,103373495,67647823},--Sudo users
-    disabled_channels = {},
+    sudo_users = {196791585,158788916,131702074,103788804,0,tonumber(our_id)},--Sudo users
+    disabled_channels = {94293138},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Sbss Bot V2 Beta
-    An Advanced Anti Spam Bot Forked On TeleSeed
-    
-    Develpoed By:
-    @Mr_Ah_S
-    Manager:
-    @amiirdada
-    Founder:
-    @AmirQuick
-    
-    Special Thank To:
-    Mehr Pouya
-    Arman
-    IM/-\N
-    Creed Is Dead
-    
-    Powered By @Sbss_Team
-    
-    #Open Source
-    https://github.com/SbssTeam/Sbss
+    about_text = [[Roohsavar v3.5 - Open Source
+An advance Administration bot based on yagop/telegram-bot 
+
+💎github💎
+📁 https://github.com/theonlywild/roohsavar 📂
+
+⚜Admins⚜
+🔶 @lonelywild [Founder]
+🔶 @ShadowAdmin [programmer]
+🔶 @mehdi_killer78 [Manager]
+🔶 @masudre11  [Manager]
+
+❤️Special thanks to❤️
+❣ThisIsamirh❣
+❣milad_az❣
+❣amin826❣
+
+✌Our channels✌
+@roohsavarTeam [persian]
+🇮🇷 made in iran 🇮🇷
 ]],
     help_text_realm = [[
 See Patterns In Github
@@ -348,10 +348,6 @@ See Patterns In Github
 ●•••••••••••••••••••••••••●
 ❗️Note that: از ! و / استفاده نکنید
 ●•••••••••••••••••••••••••●
-Developers: 
-@janlou
-@amiraliiiiiiiii81
-@amirhossein_0079
 ]]
   }
   serialize_to_file(config, './data/config.lua')
