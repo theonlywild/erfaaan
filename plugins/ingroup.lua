@@ -1186,7 +1186,7 @@ local function run(msg, matches)
         return "اول با لینک جدید یک لینک جدید بسازید"
       end
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]")
-      return "لینک گروه :\nقدرت برگرفته از ادوان\n"..group_link
+      return "لینک گروه :'..string.gsub(group_name, '_', ' ')..'\nقدرت برگرفته از ادوان\n"..group_link
     end
 	if matches[1] == 'لینک خصوصی' then
       if not is_momod(msg) then
@@ -1197,7 +1197,7 @@ local function run(msg, matches)
         return "اول با لینک جدید یک لینک بسازید"
       end
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]")
-     send_large_msg('user#id'..msg.from.id, "لینک گروه :\nقدرت برگرفته از ادوان\n"..group_link)
+     send_large_msg('user#id'..msg.from.id, "لینک گروه :'..string.gsub(group_name, '_', ' ')..'\nقدرت برگرفته از ادوان\n"..group_link)
     end
     if matches[1] == 'دارنده' and matches[2] then
       if not is_owner(msg) then
